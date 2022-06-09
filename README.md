@@ -24,9 +24,12 @@ The [pipeline][./.drone.yml] can be configured with following parameters,
 - `DOCKER_FILE`: The dockerfile within sources that will be used to build the container image. This path is relative to MAVEN_MODULE.  Default **Dockerfile**
 - `APP_SERVICE_TYPE`: The Kubernetes service type. Default **LoadBalancer**
 
-[ttl.sh](https://ttl.sh) is an Anonymous & ephemeral Docker image registry, which is very handy for CI, Demos and Testing.
+[ttl.sh](https://ttl.sh) is an anonymous & ephemeral container image registry, which is very handy for CI, Demos and Testing.
 
-__IMPORTANT__: If you are using Kubernetes then make sure the Cluster server address matches to `$NODE_IP` in your `$KUBECONFIG`
+__IMPORTANT__: 
+
+  - Make sure you set the right architecture in `.drone.yml` platform. It defaults to `arm64` other allowd values is `amd64` which is default for Drone if not specified
+  - If you are using Kubernetes then make sure the Cluster server address matches to `$NODE_IP` in your `$KUBECONFIG`
 
 Edit the environment variables in the `.drone.yml` to suit your build needs
 
