@@ -41,6 +41,10 @@ Edit the environment variables in the `.drone.yml` to suit your build needs
 
 Update the `MAVEN_MODULE` in [pipeline][./.drone.yml] to `quarkus` before running the following command to build and deploy the application
 
+Copy the file `post-commmit-hook.tpl` to `$PROJECT_HOME/.git/hooks/post-commmit-hook`. Now any change you make to source and commit will trigger a Drone pipeline run.
+
+If you still need to trigger a manual run you can do,
+
 ```shell
 drone exec --trusted
 ```
@@ -62,7 +66,7 @@ java -jar quarkus/target/quarkus-app/quarkus-run.jar
 
 ## Build using Drone Pipeline
 
-Update the `MAVEN_MODULE` in [pipeline][./.drone.yml] to `springboot` before running the following command to build and deploy the application
+Update the `MAVEN_MODULE` in [pipeline][./.drone.yml] to `springboot` and just commit the file to trigger a pipeline run.
 
 ```shell
 drone exec --trusted

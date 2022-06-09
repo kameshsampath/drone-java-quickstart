@@ -10,7 +10,7 @@ platform:
 
 environment: &buildEnv
   MAVEN_MODULE: springboot
-  DESTINATION_IMAGE: "ttl.sh/drone-java-quickstart:1h"
+  DESTINATION_IMAGE: "ttl.sh/kameshsampath/drone-java-quickstart:1h"
   APP_NAMESPACE: demos
   KUBERNETES_CONTEXT: rancher-desktop
   DOCKER_FILE: Dockerfile
