@@ -36,3 +36,4 @@ pom.xml.versionsBackup
 release.properties
 
 .m2
+.drone.yml.local

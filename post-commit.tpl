@@ -2,5 +2,5 @@
 
 set -e
 
-drone exec --trusted
+drone exec --trusted .drone.yml.local
 
