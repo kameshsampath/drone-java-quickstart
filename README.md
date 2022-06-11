@@ -84,6 +84,7 @@ Find the architecture of the underlying operating systems e.g. amd64 or arm64 et
 
 ```shell
 export ARCH=$(uname -m)
+```
 
 Find the local maven repository path by default its `$HOME/.m2`,
 
