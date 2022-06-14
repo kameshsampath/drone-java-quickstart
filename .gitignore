@@ -37,3 +37,4 @@ release.properties
 
 .m2
 .drone.yml.local
+.env.*

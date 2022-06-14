@@ -1,4 +1,0 @@
-namespace: $APP_NAMESPACE
-resources:
-  - deployment.yaml
-  - service.yaml
